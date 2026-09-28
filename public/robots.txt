@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://topekahydrojetting.prosapp.site/sitemap.xml
+Sitemap: https://syracusehydrojetting.prosapp.site/sitemap.xml
