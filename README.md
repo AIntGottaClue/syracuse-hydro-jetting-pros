@@ -1,7 +1,10 @@
-# Topeka Hydro Jetting Pros
+# Syracuse Hydro Jetting Pros
 
-Astro static site. `npm install && npm run build` builds 16 pages into `dist/`; `npm run dev` previews locally. Cloudflare Worker serves the `dist/` static assets configured in `wrangler.jsonc`.
+Astro site for Syracuse, NY. The sole integration and phone config is `src/data/siteConfig.ts`. GA4 remains a placeholder until the site owner adds a property ID. Build with `npm ci && npm run build`; Cloudflare Workers serves `./dist` per `wrangler.jsonc`. The request form uses AirChatty. Do not submit test leads without the owner’s numbered test plan.
 
-For the affiliate phone number or analytics on this HSP site, edit **only `src/data/siteConfig.ts`**: `phoneDisplay`, `phoneHref` (include country code, omit `tel:`), `ga4MeasurementId`, `airchattyTrackingId`, and site brand/origin. Rebuild and deploy after editing. The placeholder GA4 ID does not collect analytics until replaced.
-
-The original page HTML is preserved in `src/data/pages.json`; Astro renders each route and replaces site-specific placeholders from the one config file. `src/layouts/LegacyPage.astro` owns that replacement. The existing `public/assets/site.js` preserves menu, form-validation, phone normalization, confirmed-success, and tracker integration behavior. No form submission should be used as a deployment smoke test without approval.
+## Copy research
+- https://www.syr.gov/Boards-and-Commissions/Municipal-Boards/SLPB/Sedgwick-Highland-James-Preservation-District
+- https://www.syr.gov/Departments/Purchase/Bids-Active/2025-03-16-RFQ-Sedgwick-Sewer-Separation
+- https://www.syr.gov/Departments/NBD/NBD-Initiatives/Syracuse-Housing-Strategy
+- https://www.syr.gov/Projects/NBD-Projects/Brownfields/Erie-Blvd-East-BOA
+- https://www.syr.gov/Living/Our-Community/Parks-Recreation-Youth-Services/Visit-Our-Parks/Onondaga-Park-Upper
